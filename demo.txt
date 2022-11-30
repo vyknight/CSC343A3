@@ -1,0 +1,93 @@
+-------------------- Loading schema and data: --------------------
+
+psql:schema.ddl:29: NOTICE:  drop cascades to 17 other objects
+DETAIL:  drop cascades to table owner
+drop cascades to table venue
+drop cascades to table owns
+drop cascades to table seats
+drop cascades to view allseats
+drop cascades to view accessibleseats
+drop cascades to view combinedseatstable
+drop cascades to view venueseatcount
+drop cascades to table concert
+drop cascades to table booking
+drop cascades to table price
+drop cascades to table users
+drop cascades to table ticket
+drop cascades to table purchase
+drop cascades to view purchasecount
+drop cascades to view purchasedticketsandprice
+drop cascades to view concertearnings
+DROP SCHEMA
+CREATE SCHEMA
+SET
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+SET
+INSERT 0 3
+INSERT 0 2
+INSERT 0 3
+INSERT 0 76
+INSERT 0 7
+INSERT 0 7
+INSERT 0 13
+INSERT 0 3
+INSERT 0 7
+INSERT 0 7
+
+-------------------- Query 1: -----------------------------------
+
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+ c_id |              name              | total_earnings |   percentagesold   
+------+--------------------------------+----------------+--------------------
+    1 | Womens Blues Review            |            275 |                  8
+    3 | Mariah Carey - Merry Christmas |            388 |  6.666666666666667
+    6 | TSO - Elf in Concert           |            159 |  4.761904761904762
+    2 | Mariah Carey - Merry Christmas |            986 | 3.3333333333333335
+    0 | Ron Sexsmith                   |            130 |                  4
+    5 | TSO - Elf in Concert           |              0 |                  0
+    4 | TSO - Elf in Concert           |              0 |                  0
+(7 rows)
+
+
+-------------------- Query 2: -----------------------------------
+
+                        name                         |   phone   | venues_owned 
+-----------------------------------------------------+-----------+--------------
+ Maple Leaf Sports & Entertainment                   | 987654321 |            1
+ The Corporation of Massey Hall and Roy Thomson Hall | 123456789 |            2
+(2 rows)
+
+
+-------------------- Query 3: -----------------------------------
+
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+       name       | percentageaccessible 
+------------------+----------------------
+ Massey Hall      |                   24
+ Roy Thomson Hall |                    0
+ ScotiaBank Arena |    33.33333333333333
+(3 rows)
+
+psql:runner.txt:17: error: invalid command \echos
+-------------------- Query 4: -----------------------------------
+
+CREATE VIEW
+ username 
+----------
+ cristonc
+(1 row)
+
+csc343h-liuzeku4=>
